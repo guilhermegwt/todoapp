@@ -1,0 +1,21 @@
+{% block update %}
+
+    <div>
+        <form method="POST">
+            <label for="titletoupdate">Atualizar:</label>
+            <br/>
+            <input type="text" name="titletoup" value="{{ request.form['titletoup'] }}"/>
+            <br/>
+            <label for="titleup">Titulo atualizado:</label>
+            <br/>
+            <input type="text" name="titleup" value="{{ request.form['titleup'] }}"/>
+            <br/>
+            <label for="contentup">Conteudo atualizado:</label>
+            <br/>
+            <input type="text" name="contentup" value="{{ request.form['contentup'] }}"/>
+            <br>
+            <button type="submit">Atualizar</button>
+        </form>
+    </div>
+
+{% endblock %}

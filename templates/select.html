@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block select %}
+
+    {% for todo in todo %}
+    <div class='post'>
+        <h2>{{ todo['title'] }}</h2>
+        <p>{{ todo['content'] }}</p>
+    </div>
+    {% endfor %}
+
+{% endblock %}

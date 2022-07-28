@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo APP</title>
+    <style>
+        .post {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Todo App</h1>
+        </div>
+    </header>
+    <section>
+        <div class="select">
+            {% block select %} {% endblock %}
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            {% block content %} {% endblock %}
+        </div>
+    </section>
+    <section>
+        <div class="add">
+            {% block add %} {% endblock %}
+        </div>
+    </section>
+    <section>
+        <div class="delete">
+            {% block delete %} {% endblock %}
+        </div>
+    </section>
+    <section>
+        <div class="update">
+            {% block update %} {% endblock %}
+        </div>
+    </section>
+</body>
+</html>
